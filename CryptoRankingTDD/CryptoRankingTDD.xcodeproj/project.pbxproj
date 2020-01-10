@@ -13,7 +13,19 @@
 		0483BD0023C7F1E7009CF389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0483BCFE23C7F1E7009CF389 /* Main.storyboard */; };
 		0483BD0223C7F1EB009CF389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0483BD0123C7F1EB009CF389 /* Assets.xcassets */; };
 		0483BD0523C7F1EB009CF389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0483BD0323C7F1EB009CF389 /* LaunchScreen.storyboard */; };
+		0483BD1323C7F6BE009CF389 /* CryptoRankingTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483BD1223C7F6BE009CF389 /* CryptoRankingTDDTests.swift */; };
+		0483BD1B23C8067D009CF389 /* DataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483BD1A23C8067D009CF389 /* DataGetter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0483BD1523C7F6BE009CF389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0483BCED23C7F1E7009CF389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483BCF423C7F1E7009CF389;
+			remoteInfo = CryptoRankingTDD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0483BCF523C7F1E7009CF389 /* CryptoRankingTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRankingTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		0483BD0123C7F1EB009CF389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0483BD0423C7F1EB009CF389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0483BD0623C7F1EB009CF389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0483BD1023C7F6BE009CF389 /* CryptoRankingTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankingTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0483BD1223C7F6BE009CF389 /* CryptoRankingTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankingTDDTests.swift; sourceTree = "<group>"; };
+		0483BD1423C7F6BE009CF389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0483BD1A23C8067D009CF389 /* DataGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0483BCF223C7F1E7009CF389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0483BD0D23C7F6BE009CF389 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0483BCF723C7F1E7009CF389 /* CryptoRankingTDD */,
+				0483BD1123C7F6BE009CF389 /* CryptoRankingTDDTests */,
 				0483BCF623C7F1E7009CF389 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				0483BCF523C7F1E7009CF389 /* CryptoRankingTDD.app */,
+				0483BD1023C7F6BE009CF389 /* CryptoRankingTDDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +88,18 @@
 				0483BD0123C7F1EB009CF389 /* Assets.xcassets */,
 				0483BD0323C7F1EB009CF389 /* LaunchScreen.storyboard */,
 				0483BD0623C7F1EB009CF389 /* Info.plist */,
+				0483BD1A23C8067D009CF389 /* DataGetter.swift */,
 			);
 			path = CryptoRankingTDD;
+			sourceTree = "<group>";
+		};
+		0483BD1123C7F6BE009CF389 /* CryptoRankingTDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				0483BD1223C7F6BE009CF389 /* CryptoRankingTDDTests.swift */,
+				0483BD1423C7F6BE009CF389 /* Info.plist */,
+			);
+			path = CryptoRankingTDDTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +122,24 @@
 			productReference = 0483BCF523C7F1E7009CF389 /* CryptoRankingTDD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0483BD0F23C7F6BE009CF389 /* CryptoRankingTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0483BD1923C7F6BE009CF389 /* Build configuration list for PBXNativeTarget "CryptoRankingTDDTests" */;
+			buildPhases = (
+				0483BD0C23C7F6BE009CF389 /* Sources */,
+				0483BD0D23C7F6BE009CF389 /* Frameworks */,
+				0483BD0E23C7F6BE009CF389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0483BD1623C7F6BE009CF389 /* PBXTargetDependency */,
+			);
+			name = CryptoRankingTDDTests;
+			productName = CryptoRankingTDDTests;
+			productReference = 0483BD1023C7F6BE009CF389 /* CryptoRankingTDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +152,10 @@
 				TargetAttributes = {
 					0483BCF423C7F1E7009CF389 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					0483BD0F23C7F6BE009CF389 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0483BCF423C7F1E7009CF389;
 					};
 				};
 			};
@@ -116,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				0483BCF423C7F1E7009CF389 /* CryptoRankingTDD */,
+				0483BD0F23C7F6BE009CF389 /* CryptoRankingTDDTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0483BD0E23C7F6BE009CF389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +203,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0483BD1B23C8067D009CF389 /* DataGetter.swift in Sources */,
 				0483BCFD23C7F1E7009CF389 /* ViewController.swift in Sources */,
 				0483BCF923C7F1E7009CF389 /* AppDelegate.swift in Sources */,
 				0483BCFB23C7F1E7009CF389 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0483BD0C23C7F6BE009CF389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483BD1323C7F6BE009CF389 /* CryptoRankingTDDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0483BD1623C7F6BE009CF389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0483BCF423C7F1E7009CF389 /* CryptoRankingTDD */;
+			targetProxy = 0483BD1523C7F6BE009CF389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0483BCFE23C7F1E7009CF389 /* Main.storyboard */ = {
@@ -314,6 +396,44 @@
 			};
 			name = Release;
 		};
+		0483BD1723C7F6BE009CF389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoRankingTDDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MCS.CryptoRankingTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoRankingTDD.app/CryptoRankingTDD";
+			};
+			name = Debug;
+		};
+		0483BD1823C7F6BE009CF389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CryptoRankingTDDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MCS.CryptoRankingTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoRankingTDD.app/CryptoRankingTDD";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +451,15 @@
 			buildConfigurations = (
 				0483BD0A23C7F1EB009CF389 /* Debug */,
 				0483BD0B23C7F1EB009CF389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0483BD1923C7F6BE009CF389 /* Build configuration list for PBXNativeTarget "CryptoRankingTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0483BD1723C7F6BE009CF389 /* Debug */,
+				0483BD1823C7F6BE009CF389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
